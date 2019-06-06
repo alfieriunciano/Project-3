@@ -4,15 +4,14 @@ var db = require('../models');
 // =============================================================
 module.exports = {
   findAll: function(req, res) {
-    db.Post.findAll({}).then(function(dbPost) {
+    db.Message.findAll({}).then(function(dbPost) {
       res.json(dbPost);
     });
   },
   create: function(req, res) {
-    db.Post.create({
-      title: req.body.title,
-      body: req.body.body,
-      category: req.body.category,
+    db.Message.create({
+      user: req.body.user,
+      text: req.body.text
     }).then(function(dbPost) {
       res.json(dbPost);
     });

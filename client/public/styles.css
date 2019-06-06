@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+html, body, #root, #root>div {
+  height: 100%
+}
+
+body{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color:white;
+    background-image: url('./images/1.png')
+    
+}
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.navbar-expand-lg {
+    background-color: rgb(255, 255, 255)
+}
+
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+    text-transform: none;
+    font-weight: normal;
+}
+
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@-webkit-keyframes test {
+  0% {
+    background-image: url('./images/1.png');
+  }
+  50% {
+    background-image: url('./images/2.png');
+  }
+  100% {
+    background-image: url('./images/3.png');
+  }
+}
+
+rossfade {
+  height: 100%;
+  -webkit-animation-name: test;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+
+.chat-wrapper{
+  background-image: url("./images/4.png");
+  height: 100%;
+}
